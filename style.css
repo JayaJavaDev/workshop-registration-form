@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #575757;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.seats {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 17px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 45px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border: 1px solid #e1e5e8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.input-box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 43px;
+    height: 100%;
+    background-color: #f7f8f8;
+    border-right: 1px solid #e1e5e8;
+    color: #555;
+}
+
+.input-box b {
+    color: red;
+    font-size: 12px;
+}
+
+.input-box input,
+.input-box select {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 14px;
+    border: none;
+    outline: none;
+    background: white;
+    color: #777;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #1674ed;
+    border-radius: 8px;
+    background-color: #1674ed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #fff;
+    color: #5685c9;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image,
+    form {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 280px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        margin: 25px auto;
+    }
+}
